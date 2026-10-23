@@ -1,0 +1,6 @@
+{
+  "name": "Nexus Games & Web Proxy",
+  "description": "High-speed web proxy browser and curated unblocked games portal with tab cloaking and custom iframe games support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
