@@ -52,12 +52,33 @@ export const ProxyBrowser = () => {
 
     try {
       const res = await fetch(`/api/search?q=${encodeURIComponent(query)}`);
+      if (!res.ok) throw new Error('API not available');
       const data = await res.json();
       setSearchResults(data.results || []);
       setInstantAnswer(data.instant || null);
     } catch (err) {
-      setSearchResults([]);
-      setInstantAnswer(null);
+      // Fallback for static GitHub Pages hosting
+      try {
+        const wikiRes = await fetch(
+          `https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(
+            query
+          )}&format=json&origin=*&utf8=1&srlimit=10`
+        );
+        const wikiData = await wikiRes.json();
+        if (wikiData.query && wikiData.query.search) {
+          const fallbackList = wikiData.query.search.map((item) => ({
+            title: item.title,
+            snippet: item.snippet.replace(/<\/?[^>]+(>|$)/g, ''),
+            url: `https://en.wikipedia.org/wiki/${encodeURIComponent(item.title.replace(/ /g, '_'))}`,
+            source: 'Wikipedia (Static Mode)',
+          }));
+          setSearchResults(fallbackList);
+          setInstantAnswer(null);
+        }
+      } catch (clientErr) {
+        setSearchResults([]);
+        setInstantAnswer(null);
+      }
     } finally {
       setIsLoadingSearch(false);
     }

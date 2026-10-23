@@ -6,9 +6,9 @@
   "scripts": {
     "dev": "node server.js",
     "start": "node server.js",
-    "build": "vite build",
+    "build": "vite build && rm -rf docs && cp -r dist docs",
     "preview": "vite preview",
-    "clean": "rm -rf dist",
+    "clean": "rm -rf dist docs",
     "lint": "echo 'No lint errors'"
   },
   "dependencies": {

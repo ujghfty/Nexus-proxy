@@ -13,7 +13,7 @@ const FALLBACK_GAMES = [
     title: 'Slope 3D',
     category: 'Action',
     description: 'High-octane neon runner rolling down a twisting 3D slope. Dodge obstacles and jump speed ramps.',
-    iframeSrc: '/games/slope.html',
+    iframeSrc: './games/slope.html',
     aspectRatio: '16:9',
     controls: 'A / D or Left / Right arrow keys to steer.',
     tags: ['3D', 'Endless', 'High Speed'],
@@ -26,7 +26,7 @@ const FALLBACK_GAMES = [
     title: 'Tetris Matrix',
     category: 'Arcade',
     description: 'The definitive falling blocks puzzle. Clear lines, use hold queue and ghost piece projection.',
-    iframeSrc: '/games/tetris.html',
+    iframeSrc: './games/tetris.html',
     aspectRatio: '4:3',
     controls: 'Arrow keys / WASD to move & rotate. Space to drop.',
     tags: ['Retro', 'Puzzle', 'Classic'],
@@ -39,7 +39,7 @@ const FALLBACK_GAMES = [
     title: '2048 Classic',
     category: 'Puzzle',
     description: 'Slide matching numbered tiles across the 4x4 grid. Reach the legendary 2048 tile.',
-    iframeSrc: '/games/2048.html',
+    iframeSrc: './games/2048.html',
     aspectRatio: '1:1',
     controls: 'Arrow keys, WASD, or swipe on touchscreen.',
     tags: ['Math', 'Strategy', 'Brain'],
@@ -52,7 +52,7 @@ const FALLBACK_GAMES = [
     title: 'Pac-Man Arcade',
     category: 'Arcade',
     description: 'Munch all pac-dots in the classic maze while outsmarting Blinky, Pinky, Inky, and Clyde.',
-    iframeSrc: '/games/pacman.html',
+    iframeSrc: './games/pacman.html',
     aspectRatio: '4:3',
     controls: 'Arrow keys or WASD to navigate corridors.',
     tags: ['Retro', 'Arcade', 'Maze'],
@@ -65,7 +65,7 @@ const FALLBACK_GAMES = [
     title: 'Neon Snake',
     category: 'Classic',
     description: 'Smooth retro cyber snake. Gobble glowing neon orbs and rare golden apples to extend your tail.',
-    iframeSrc: '/games/snake.html',
+    iframeSrc: './games/snake.html',
     aspectRatio: '1:1',
     controls: 'Arrow keys or WASD to change direction.',
     tags: ['Retro', 'Arcade', 'Fast'],
@@ -78,7 +78,7 @@ const FALLBACK_GAMES = [
     title: 'Flappy Bird',
     category: 'Arcade',
     description: 'Precision tap-to-fly arcade game. Navigate through narrow pipe openings with delicate timing.',
-    iframeSrc: '/games/flappy.html',
+    iframeSrc: './games/flappy.html',
     aspectRatio: '3:4',
     controls: 'Spacebar or click/tap to flap wings.',
     tags: ['Skill', 'Arcade', 'Physics'],
@@ -91,7 +91,7 @@ const FALLBACK_GAMES = [
     title: 'Asteroids 1979',
     category: 'Action',
     description: 'Authentic vector space shooter with inertia physics. Rotate, thrust across deep space, and blast asteroids.',
-    iframeSrc: '/games/asteroids.html',
+    iframeSrc: './games/asteroids.html',
     aspectRatio: '4:3',
     controls: 'Arrows to steer & thrust. Space to fire laser.',
     tags: ['Space', 'Shooter', 'Vector'],
@@ -104,7 +104,7 @@ const FALLBACK_GAMES = [
     title: 'Breakout Matrix',
     category: 'Arcade',
     description: 'Smash vibrant rows of brick clusters with bouncing balls. Collect paddle extenders and powerups.',
-    iframeSrc: '/games/breakout.html',
+    iframeSrc: './games/breakout.html',
     aspectRatio: '4:3',
     controls: 'Mouse or Left / Right arrow keys to position paddle.',
     tags: ['Bricks', 'Powerups', 'Arcade'],
@@ -117,7 +117,7 @@ const FALLBACK_GAMES = [
     title: 'Neon Pong',
     category: 'Sports',
     description: 'The grandfather of video games revitalized with neon glow aesthetics and curve spin physics.',
-    iframeSrc: '/games/pong.html',
+    iframeSrc: './games/pong.html',
     aspectRatio: '16:9',
     controls: 'P1: W/S or mouse. P2: Up/Down arrow keys.',
     tags: ['2 Player', 'Sports', 'Retro'],
@@ -130,7 +130,7 @@ const FALLBACK_GAMES = [
     title: 'T-Rex Dino Runner',
     category: 'Action',
     description: 'The beloved offline chrome runner. Leap over desert cacti and duck underneath flying pterodactyls.',
-    iframeSrc: '/games/dino.html',
+    iframeSrc: './games/dino.html',
     aspectRatio: '16:9',
     controls: 'Space / Up Arrow to jump. Down Arrow to duck.',
     tags: ['Endless', 'Runner', 'Pixel'],
@@ -143,7 +143,7 @@ const FALLBACK_GAMES = [
     title: 'Minesweeper Classic',
     category: 'Puzzle',
     description: 'Uncover numbers and logically deduce hidden mines without detonation.',
-    iframeSrc: '/games/minesweeper.html',
+    iframeSrc: './games/minesweeper.html',
     aspectRatio: '1:1',
     controls: 'Left click to reveal. Right click to flag.',
     tags: ['Logic', 'Brain', 'Strategy'],
@@ -156,7 +156,7 @@ const FALLBACK_GAMES = [
     title: 'Connect 4',
     category: 'Puzzle',
     description: 'Classic vertical checker drop game. Strategically align 4 discs against smart AI or a friend.',
-    iframeSrc: '/games/connect4.html',
+    iframeSrc: './games/connect4.html',
     aspectRatio: '4:3',
     controls: 'Click any column to drop a checker disc.',
     tags: ['Strategy', 'Board', '2 Player'],
@@ -169,7 +169,7 @@ const FALLBACK_GAMES = [
     title: 'Space Invaders',
     category: 'Action',
     description: 'Descend into planetary defense. Blast relentless waves of marching alien armadas.',
-    iframeSrc: '/games/space-invaders.html',
+    iframeSrc: './games/space-invaders.html',
     aspectRatio: '4:3',
     controls: 'Arrows / WASD to steer. Space to fire.',
     tags: ['Retro', 'Space', 'Defense'],
@@ -182,7 +182,7 @@ const FALLBACK_GAMES = [
     title: 'Word Quest',
     category: 'Puzzle',
     description: '5-letter word deduction game. Six guesses to discover the mystery word using colored letter feedback.',
-    iframeSrc: '/games/wordle.html',
+    iframeSrc: './games/wordle.html',
     aspectRatio: '1:1',
     controls: 'Type on physical keyboard or click virtual keys.',
     tags: ['Word', 'Vocabulary', 'Brain'],
@@ -204,10 +204,13 @@ export default function App() {
   const [panicKey, setPanicKey] = useState('Escape');
   const [currentCloak, setCurrentCloak] = useState('default');
 
-  // Load games from /data/games.json
+  // Load games from ./data/games.json or fallback
   useEffect(() => {
-    fetch('/data/games.json')
-      .then((res) => res.json())
+    fetch('./data/games.json')
+      .then((res) => {
+        if (!res.ok) throw new Error('Not ok');
+        return res.json();
+      })
       .then((data) => {
         if (Array.isArray(data) && data.length > 0) {
           setGames(data);
